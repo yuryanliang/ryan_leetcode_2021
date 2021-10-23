@@ -71,10 +71,10 @@ if __name__ == "__main__":
 class Traversal:
     def pre_order_template(self, root):
         res =[]
-        stack = []
+        stack = [root]
         p = root
 
-        if p or stack:
+        if stack:
             if p:
                 stack.append(p)
                 res.append(p.val)
@@ -85,10 +85,10 @@ class Traversal:
         return res
     def in_oder_template(self, root):
         res = []
-        stack =[]
+        stack =[root]
         p = root
 
-        if p or stack:
+        if stack:
             if p:
                 stack.append(p)
                 p = p.left
@@ -99,10 +99,10 @@ class Traversal:
         return res
     def post_order_template(self, root):
         res = []
-        stack =[]
+        stack =[root]
         p = root
 
-        if p or stack:
+        if stack:
             if p:
                 stack.append(p)
                 res.insert(0, p.val)
