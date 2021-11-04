@@ -53,3 +53,6 @@ class Solution:
         string1= dic[digits[index]]
         for i in string1:
             self.dfs(digits, index + 1, dic, path + i, res)
+if __name__ == '__main__':
+    digits = "23"
+    print(Solution().letterCombinations(digits))
