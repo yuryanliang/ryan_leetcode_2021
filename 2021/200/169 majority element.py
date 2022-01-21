@@ -28,3 +28,6 @@ class Solution:
             dict[num] = dict.get(num, 0) + 1
             if dict[num] > len(nums)//2:
                 return num
+if __name__ == '__main__':
+    nums = [2, 2, 1, 1, 1, 2, 2]
+    print(Solution().majorityElement(nums))
